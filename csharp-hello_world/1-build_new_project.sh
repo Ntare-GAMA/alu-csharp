@@ -1,3 +1,10 @@
 #!/usr/bin/env bash
-dotnet new console -o 1-new_project --force 2>&1
-dotnet build 1-new_project 2>&1
+# Script to initialize and build a new C# project
+DIR="1-new_project"
+
+if [ -d "$DIR" ]; then
+  rm -rf "$DIR"
+fi
+dotnet new console -o "$DIR"
+
+dotnet build "$DIR"
