@@ -1,0 +1,15 @@
+C:\Users\user\Downloads\alu-csharp\csharp-arrays_lists_dictionaries\2-replace_element\bin\Debug\net7.0\2-replace_element.exe
+C:\Users\user\Downloads\alu-csharp\csharp-arrays_lists_dictionaries\2-replace_element\bin\Debug\net7.0\2-replace_element.deps.json
+C:\Users\user\Downloads\alu-csharp\csharp-arrays_lists_dictionaries\2-replace_element\bin\Debug\net7.0\2-replace_element.runtimeconfig.json
+C:\Users\user\Downloads\alu-csharp\csharp-arrays_lists_dictionaries\2-replace_element\bin\Debug\net7.0\2-replace_element.dll
+C:\Users\user\Downloads\alu-csharp\csharp-arrays_lists_dictionaries\2-replace_element\bin\Debug\net7.0\2-replace_element.pdb
+C:\Users\user\Downloads\alu-csharp\csharp-arrays_lists_dictionaries\2-replace_element\obj\Debug\net7.0\2-replace_element.csproj.AssemblyReference.cache
+C:\Users\user\Downloads\alu-csharp\csharp-arrays_lists_dictionaries\2-replace_element\obj\Debug\net7.0\2-replace_element.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Downloads\alu-csharp\csharp-arrays_lists_dictionaries\2-replace_element\obj\Debug\net7.0\2-replace_element.AssemblyInfoInputs.cache
+C:\Users\user\Downloads\alu-csharp\csharp-arrays_lists_dictionaries\2-replace_element\obj\Debug\net7.0\2-replace_element.AssemblyInfo.cs
+C:\Users\user\Downloads\alu-csharp\csharp-arrays_lists_dictionaries\2-replace_element\obj\Debug\net7.0\2-replace_element.csproj.CoreCompileInputs.cache
+C:\Users\user\Downloads\alu-csharp\csharp-arrays_lists_dictionaries\2-replace_element\obj\Debug\net7.0\2-replace_element.dll
+C:\Users\user\Downloads\alu-csharp\csharp-arrays_lists_dictionaries\2-replace_element\obj\Debug\net7.0\refint\2-replace_element.dll
+C:\Users\user\Downloads\alu-csharp\csharp-arrays_lists_dictionaries\2-replace_element\obj\Debug\net7.0\2-replace_element.pdb
+C:\Users\user\Downloads\alu-csharp\csharp-arrays_lists_dictionaries\2-replace_element\obj\Debug\net7.0\2-replace_element.genruntimeconfig.cache
+C:\Users\user\Downloads\alu-csharp\csharp-arrays_lists_dictionaries\2-replace_element\obj\Debug\net7.0\ref\2-replace_element.dll
