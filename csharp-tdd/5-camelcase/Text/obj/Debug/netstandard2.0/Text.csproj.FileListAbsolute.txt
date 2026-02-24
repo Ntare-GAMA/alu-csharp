@@ -1,0 +1,10 @@
+c:\Users\user\alu-csharp\alu-csharp-2\csharp-tdd\5-camelcase\Text\bin\Debug\netstandard2.0\Text.deps.json
+c:\Users\user\alu-csharp\alu-csharp-2\csharp-tdd\5-camelcase\Text\bin\Debug\netstandard2.0\Text.dll
+c:\Users\user\alu-csharp\alu-csharp-2\csharp-tdd\5-camelcase\Text\bin\Debug\netstandard2.0\Text.pdb
+c:\Users\user\alu-csharp\alu-csharp-2\csharp-tdd\5-camelcase\Text\obj\Debug\netstandard2.0\Text.csproj.AssemblyReference.cache
+c:\Users\user\alu-csharp\alu-csharp-2\csharp-tdd\5-camelcase\Text\obj\Debug\netstandard2.0\Text.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\user\alu-csharp\alu-csharp-2\csharp-tdd\5-camelcase\Text\obj\Debug\netstandard2.0\Text.AssemblyInfoInputs.cache
+c:\Users\user\alu-csharp\alu-csharp-2\csharp-tdd\5-camelcase\Text\obj\Debug\netstandard2.0\Text.AssemblyInfo.cs
+c:\Users\user\alu-csharp\alu-csharp-2\csharp-tdd\5-camelcase\Text\obj\Debug\netstandard2.0\Text.csproj.CoreCompileInputs.cache
+c:\Users\user\alu-csharp\alu-csharp-2\csharp-tdd\5-camelcase\Text\obj\Debug\netstandard2.0\Text.dll
+c:\Users\user\alu-csharp\alu-csharp-2\csharp-tdd\5-camelcase\Text\obj\Debug\netstandard2.0\Text.pdb
