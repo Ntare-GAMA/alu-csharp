@@ -1,15 +1,18 @@
-﻿using System;
+using System;
 
 namespace MyMath
 {
+    /// <summary>
+    /// Provides matrix mathematical operations.
+    /// </summary>
     public class Matrix
     {
         /// <summary>
-        /// Divides all elements of a matrix by a number.
+        /// Divides all elements of a matrix by a given number.
         /// </summary>
-        /// <param name="matrix">Input matrix</param>
-        /// <param name="num">Number to divide by</param>
-        /// <returns>New matrix with divided elements, or null if input invalid</returns>
+        /// <param name="matrix">The 2D integer array to divide.</param>
+        /// <param name="num">The divisor.</param>
+        /// <returns>A new matrix with divided elements, or null if matrix is null or num is 0.</returns>
         public static int[,] Divide(int[,] matrix, int num)
         {
             if (matrix == null) return null;
