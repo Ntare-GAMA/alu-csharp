@@ -1,24 +1,28 @@
 using System;
-using System.Text;
-using System.Text.RegularExpressions;
 
 namespace Text
 {
     /// <summary>
-    /// Provides string utility operations.
+    /// Class for string operations
     /// </summary>
     public class Str
     {
         /// <summary>
-        /// Determines whether a given string is a palindrome.
+        /// Determines if a string is a palindrome
         /// </summary>
-        /// <param name="s">The string to check.</param>
-        /// <returns>True if the string is a palindrome, false otherwise.</returns>
+        /// <param name="s">The string to check</param>
+        /// <returns>True if the string is a palindrome, False otherwise</returns>
         public static bool IsPalindrome(string s)
         {
-            if (s == null) return false;
+            if (string.IsNullOrEmpty(s))
+                return true;
 
-            string cleaned = Regex.Replace(s, @"[^a-zA-Z0-9]", "").ToLower();
+            string cleaned = "";
+            foreach (char c in s)
+            {
+                if (char.IsLetterOrDigit(c))
+                    cleaned += char.ToLower(c);
+            }
 
             int left = 0;
             int right = cleaned.Length - 1;
