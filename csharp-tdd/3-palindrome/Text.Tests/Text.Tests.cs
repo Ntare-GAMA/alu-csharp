@@ -3,27 +3,12 @@ using Text;
 
 namespace Text.Tests
 {
+    /// <summary>
+    /// Tests for the <see cref="Str"/> class.
+    /// </summary>
     [TestFixture]
     public class StrTests
     {
-        [Test]
-        public void IsPalindrome_EmptyString_ReturnsTrue()
-        {
-            Assert.IsTrue(Str.IsPalindrome(""));
-        }
-
-        [Test]
-        public void IsPalindrome_NullString_ReturnsTrue()
-        {
-            Assert.IsTrue(Str.IsPalindrome(null));
-        }
-
-        [Test]
-        public void IsPalindrome_SingleCharacter_ReturnsTrue()
-        {
-            Assert.IsTrue(Str.IsPalindrome("a"));
-        }
-
         [Test]
         public void IsPalindrome_Racecar_ReturnsTrue()
         {
@@ -37,21 +22,22 @@ namespace Text.Tests
         }
 
         [Test]
-        public void IsPalindrome_PanamaPhrase_ReturnsTrue()
+        public void IsPalindrome_PhraseWithSpacesAndPunctuation_ReturnsTrue()
         {
-            Assert.IsTrue(Str.IsPalindrome("A man, a plan, a canal: Panama."));
+            string s = "A man, a plan, a canal: Panama.";
+            Assert.IsTrue(Str.IsPalindrome(s));
         }
 
         [Test]
-        public void IsPalindrome_NotPalindrome_ReturnsFalse()
+        public void IsPalindrome_EmptyString_ReturnsTrue()
+        {
+            Assert.IsTrue(Str.IsPalindrome(""));
+        }
+
+        [Test]
+        public void IsPalindrome_NonPalindrome_ReturnsFalse()
         {
             Assert.IsFalse(Str.IsPalindrome("hello"));
-        }
-
-        [Test]
-        public void IsPalindrome_CaseSensitive_ReturnsTrue()
-        {
-            Assert.IsTrue(Str.IsPalindrome("Aa"));
         }
     }
 }

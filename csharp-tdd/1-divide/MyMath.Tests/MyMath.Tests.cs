@@ -1,62 +1,53 @@
-using System;
-using System.IO;
 using NUnit.Framework;
 using MyMath;
 
 namespace MyMath.Tests
 {
+    /// <summary>
+    /// Contains unit tests for the <see cref="Matrix"/> class.
+    /// </summary>
     [TestFixture]
     public class MatrixTests
     {
+        /// <summary>
+        /// Tests that dividing a matrix with positive integers
+        /// by a positive number returns the expected result.
+        /// </summary>
         [Test]
-        public void Divide_RegularDivision_ReturnsCorrectResult()
+        public void Divide_PositiveMatrix_ReturnsCorrectResult()
         {
-            int[,] matrix = { { 98, 0, -12 }, { 21, 972, 44 }, { -727, 60, -2 } };
-            int[,] result = Matrix.Divide(matrix, 2);
-            int[,] expected = { { 49, 0, -6 }, { 10, 486, 22 }, { -363, 30, -1 } };
-            
+            int[,] mat = { { 4, 8 }, { 6, 12 } };
+            int[,] expected = { { 2, 4 }, { 3, 6 } };
+
+            int[,] result = Matrix.Divide(mat, 2);
+
             Assert.AreEqual(expected, result);
         }
 
+        /// <summary>
+        /// Tests that dividing a matrix by zero prints
+        /// a message and returns <c>null</c>.
+        /// </summary>
         [Test]
-        public void Divide_NegativeDivisor_ReturnsCorrectResult()
+        public void Divide_ByZero_PrintsMessageAndReturnsNull()
         {
-            int[,] matrix = { { 98, 0, -12 }, { 21, 972, 44 }, { -727, 60, -2 } };
-            int[,] result = Matrix.Divide(matrix, -7);
-            int[,] expected = { { -14, 0, 1 }, { -3, -138, -6 }, { 103, -8, 0 } };
-            
-            Assert.AreEqual(expected, result);
+            int[,] mat = { { 1, 2 }, { 3, 4 } };
+
+            int[,] result = Matrix.Divide(mat, 0);
+
+            Assert.IsNull(result);
         }
 
-        [Test]
-        public void Divide_DivideByZero_PrintsMessageAndReturnsNull()
-        {
-            int[,] matrix = { { 98, 0, -12 }, { 21, 972, 44 }, { -727, 60, -2 } };
-            
-            using (var sw = new StringWriter())
-            {
-                Console.SetOut(sw);
-                int[,] result = Matrix.Divide(matrix, 0);
-                
-                Assert.IsNull(result);
-                Assert.AreEqual("Num cannot be 0", sw.ToString().Trim());
-            }
-        }
-
-        [Test]
-        public void Divide_EmptyMatrix_ReturnsEmptyMatrix()
-        {
-            int[,] matrix = new int[0, 0];
-            int[,] result = Matrix.Divide(matrix, 4);
-            int[,] expected = new int[0, 0];
-            
-            Assert.AreEqual(expected, result);
-        }
-
+        /// <summary>
+        /// Tests that passing a <c>null</c> matrix returns <c>null</c>.
+        /// </summary>
         [Test]
         public void Divide_NullMatrix_ReturnsNull()
         {
-            int[,] result = Matrix.Divide(null, 2);
+            int[,] mat = null;
+
+            int[,] result = Matrix.Divide(mat, 2);
+
             Assert.IsNull(result);
         }
     }

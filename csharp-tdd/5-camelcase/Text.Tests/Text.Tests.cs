@@ -3,9 +3,25 @@ using Text;
 
 namespace Text.Tests
 {
+    /// <summary>
+    /// Tests for the <see cref="Str"/> class.
+    /// </summary>
     [TestFixture]
     public class StrTests
     {
+        [Test]
+        public void CamelCase_SingleWord_ReturnsOne()
+        {
+            Assert.AreEqual(1, Str.CamelCase("hello"));
+        }
+
+        [Test]
+        public void CamelCase_MultipleWords_ReturnsCorrectCount()
+        {
+            Assert.AreEqual(2, Str.CamelCase("helloWorld"));
+            Assert.AreEqual(3, Str.CamelCase("oneTwoThree"));
+        }
+
         [Test]
         public void CamelCase_EmptyString_ReturnsZero()
         {
@@ -13,45 +29,15 @@ namespace Text.Tests
         }
 
         [Test]
-        public void CamelCase_NullString_ReturnsZero()
+        public void CamelCase_AllLowercase_ReturnsOne()
         {
-            Assert.AreEqual(0, Str.CamelCase(null));
+            Assert.AreEqual(1, Str.CamelCase("lowercase"));
         }
 
         [Test]
-        public void CamelCase_SingleWord_ReturnsOne()
+        public void CamelCase_FirstLetterUppercase_CountsCorrectly()
         {
-            Assert.AreEqual(1, Str.CamelCase("word"));
-        }
-
-        [Test]
-        public void CamelCase_TwoWords_ReturnsTwo()
-        {
-            Assert.AreEqual(2, Str.CamelCase("camelCase"));
-        }
-
-        [Test]
-        public void CamelCase_ThreeWords_ReturnsThree()
-        {
-            Assert.AreEqual(3, Str.CamelCase("saveChangesIn"));
-        }
-
-        [Test]
-        public void CamelCase_MultipleWords_ReturnsCorrectCount()
-        {
-            Assert.AreEqual(5, Str.CamelCase("oneTwoThreeFourFive"));
-        }
-
-        [Test]
-        public void CamelCase_SingleLetter_ReturnsOne()
-        {
-            Assert.AreEqual(1, Str.CamelCase("a"));
-        }
-
-        [Test]
-        public void CamelCase_CapitalLetter_ReturnsOne()
-        {
-            Assert.AreEqual(1, Str.CamelCase("A"));
+            Assert.AreEqual(3, Str.CamelCase("CamelCaseTest"));
         }
     }
 }

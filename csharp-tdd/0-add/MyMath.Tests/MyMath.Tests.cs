@@ -3,33 +3,50 @@ using MyMath;
 
 namespace MyMath.Tests
 {
-    [TestFixture]
+    /// <summary>
+    /// Contains unit tests for the <see cref="Operations"/> class.
+    /// </summary>
     public class OperationsTests
     {
+        /// <summary>
+        /// Tests that adding two positive integers returns the correct sum.
+        /// </summary>
         [Test]
-        public void Add_TwoPositiveNumbers_ReturnsSum()
+        public void Add_PositiveIntegers_ReturnsSum()
         {
             Assert.AreEqual(5, Operations.Add(2, 3));
         }
 
+        /// <summary>
+        /// Tests that adding two negative integers returns the correct sum.
+        /// </summary>
         [Test]
-        public void Add_TwoNegativeNumbers_ReturnsSum()
+        public void Add_NegativeIntegers_ReturnsSum()
         {
             Assert.AreEqual(-5, Operations.Add(-2, -3));
         }
 
+        /// <summary>
+        /// Tests that adding a positive and a negative integer returns the correct sum.
+        /// </summary>
         [Test]
         public void Add_PositiveAndNegative_ReturnsSum()
         {
             Assert.AreEqual(1, Operations.Add(3, -2));
         }
 
+        /// <summary>
+        /// Tests that adding zero to a number returns the same number.
+        /// </summary>
         [Test]
-        public void Add_ZeroAndNumber_ReturnsNumber()
+        public void Add_NumberAndZero_ReturnsSameNumber()
         {
-            Assert.AreEqual(5, Operations.Add(0, 5));
+            Assert.AreEqual(7, Operations.Add(7, 0));
         }
 
+        /// <summary>
+        /// Tests that adding zero to zero returns zero.
+        /// </summary>
         [Test]
         public void Add_ZeroAndZero_ReturnsZero()
         {

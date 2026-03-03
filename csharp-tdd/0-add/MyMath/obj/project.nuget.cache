@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "b4DQUvpiyo+AP6NPPGSETkch48YciiESs/nZjR+6lGu1GLR0Sjzfp0QB9lb7560/CZu+YMB/ZRVTFrLtuqnSWA==",
+  "dgSpecHash": "EApA2FtYebfEUM1mVSWtQgjfcn5ubNex5YyfvlBnmZ9mtW8neih8r4SWHeoYNGoR9+7Y7x0EmzFAbXOBgTJ69A==",
   "success": true,
-  "projectFilePath": "c:\\Users\\user\\alu-csharp\\alu-csharp-1\\csharp-tdd\\0-add\\MyMath\\MyMath.csproj",
+  "projectFilePath": "C:\\Users\\ADMIN\\alu-csharp\\csharp-tdd\\0-add\\MyMath\\MyMath.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

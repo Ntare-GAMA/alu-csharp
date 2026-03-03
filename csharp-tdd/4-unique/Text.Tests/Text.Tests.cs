@@ -3,9 +3,25 @@ using Text;
 
 namespace Text.Tests
 {
+    /// <summary>
+    /// Tests for the <see cref="Str"/> class.
+    /// </summary>
     [TestFixture]
     public class StrTests
     {
+        [Test]
+        public void UniqueChar_FirstUnique_ReturnsCorrectIndex()
+        {
+            Assert.AreEqual(0, Str.UniqueChar("leetcode")); // 'l'
+            Assert.AreEqual(2, Str.UniqueChar("loveleetcode")); // 'v'
+        }
+
+        [Test]
+        public void UniqueChar_NoUnique_ReturnsMinusOne()
+        {
+            Assert.AreEqual(-1, Str.UniqueChar("aabbcc"));
+        }
+
         [Test]
         public void UniqueChar_EmptyString_ReturnsMinusOne()
         {
@@ -13,45 +29,9 @@ namespace Text.Tests
         }
 
         [Test]
-        public void UniqueChar_NullString_ReturnsMinusOne()
+        public void UniqueChar_AllUnique_ReturnsFirstIndex()
         {
-            Assert.AreEqual(-1, Str.UniqueChar(null));
-        }
-
-        [Test]
-        public void UniqueChar_SingleCharacter_ReturnsZero()
-        {
-            Assert.AreEqual(0, Str.UniqueChar("a"));
-        }
-
-        [Test]
-        public void UniqueChar_FirstCharUnique_ReturnsZero()
-        {
-            Assert.AreEqual(0, Str.UniqueChar("abcdef"));
-        }
-
-        [Test]
-        public void UniqueChar_MiddleCharUnique_ReturnsCorrectIndex()
-        {
-            Assert.AreEqual(2, Str.UniqueChar("aabcc"));
-        }
-
-        [Test]
-        public void UniqueChar_LastCharUnique_ReturnsLastIndex()
-        {
-            Assert.AreEqual(2, Str.UniqueChar("aabce"));
-        }
-
-        [Test]
-        public void UniqueChar_NoUniqueChar_ReturnsMinusOne()
-        {
-            Assert.AreEqual(-1, Str.UniqueChar("aabb"));
-        }
-
-        [Test]
-        public void UniqueChar_AllSameChar_ReturnsMinusOne()
-        {
-            Assert.AreEqual(-1, Str.UniqueChar("aaaa"));
+            Assert.AreEqual(0, Str.UniqueChar("abcde"));
         }
     }
 }

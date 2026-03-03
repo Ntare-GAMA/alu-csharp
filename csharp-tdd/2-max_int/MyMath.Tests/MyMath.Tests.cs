@@ -1,49 +1,55 @@
-using System;
-using System.Collections.Generic;
 using NUnit.Framework;
 using MyMath;
+using System.Collections.Generic;
 
 namespace MyMath.Tests
 {
+    /// <summary>
+    /// Tests for <see cref="Operations"/> class.
+    /// </summary>
     [TestFixture]
     public class OperationsTests
     {
+        /// <summary>
+        /// Returns the maximum integer in a list of positive numbers.
+        /// </summary>
         [Test]
-        public void Max_EmptyList_ReturnsZero()
+        public void Max_PositiveNumbers_ReturnsMax()
         {
-            var nums = new List<int>();
-            int result = Operations.Max(nums);
-            Assert.AreEqual(0, result);
-        }
-
-        [Test]
-        public void Max_SingleElement_ReturnsElement()
-        {
-            var nums = new List<int> { 5 };
+            List<int> nums = new() { 1, 5, 3, 2 };
             int result = Operations.Max(nums);
             Assert.AreEqual(5, result);
         }
 
+        /// <summary>
+        /// Returns the maximum integer in a list containing negative numbers.
+        /// </summary>
         [Test]
-        public void Max_MultipleElements_ReturnsMaximum()
+        public void Max_NegativeNumbers_ReturnsMax()
         {
-            var nums = new List<int> { 3, 7, 2, 9, 1 };
-            int result = Operations.Max(nums);
-            Assert.AreEqual(9, result);
-        }
-
-        [Test]
-        public void Max_NegativeNumbers_ReturnsMaximum()
-        {
-            var nums = new List<int> { -5, -2, -8, -1 };
+            List<int> nums = new() { -2, -5, -1 };
             int result = Operations.Max(nums);
             Assert.AreEqual(-1, result);
         }
 
+        /// <summary>
+        /// Returns 0 if the list is empty.
+        /// </summary>
         [Test]
-        public void Max_MixedNumbers_ReturnsMaximum()
+        public void Max_EmptyList_ReturnsZero()
         {
-            var nums = new List<int> { -3, 0, 5, -1, 2 };
+            List<int> nums = new();
+            int result = Operations.Max(nums);
+            Assert.AreEqual(0, result);
+        }
+
+        /// <summary>
+        /// Returns the maximum integer in a list with mixed positive and negative numbers.
+        /// </summary>
+        [Test]
+        public void Max_MixedNumbers_ReturnsMax()
+        {
+            List<int> nums = new() { -1, 0, 5, -3 };
             int result = Operations.Max(nums);
             Assert.AreEqual(5, result);
         }

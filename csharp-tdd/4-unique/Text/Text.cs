@@ -1,31 +1,40 @@
-using System;
+﻿using System;
+using System.Collections.Generic;
 
 namespace Text
 {
     /// <summary>
-    /// Class for string operations
+    /// Provides string-related utilities.
     /// </summary>
     public class Str
     {
         /// <summary>
-        /// Returns the index of the first non-repeating character
+        /// Returns the index of the first non-repeating character in a string.
         /// </summary>
-        /// <param name="s">The string to check</param>
-        /// <returns>Index of first non-repeating character or -1 if none exists</returns>
+        /// <param name="s">Input string (lowercase letters only)</param>
+        /// <returns>Index of first non-repeating character, or -1 if none</returns>
         public static int UniqueChar(string s)
         {
-            if (string.IsNullOrEmpty(s))
-                return -1;
+            if (string.IsNullOrEmpty(s)) return -1;
 
-            int[] count = new int[26];
-            
+            Dictionary<char, int> counts = new();
+
+            // Count occurrences
             foreach (char c in s)
-                count[c - 'a']++;
-            
+            {
+                if (counts.ContainsKey(c))
+                    counts[c]++;
+                else
+                    counts[c] = 1;
+            }
+
+            // Find first character with count 1
             for (int i = 0; i < s.Length; i++)
-                if (count[s[i] - 'a'] == 1)
+            {
+                if (counts[s[i]] == 1)
                     return i;
-            
+            }
+
             return -1;
         }
     }
