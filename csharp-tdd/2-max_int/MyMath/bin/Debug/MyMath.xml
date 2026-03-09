@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MyMath</name>
+    </assembly>
+    <members>
+        <member name="T:MyMath.Operations">
+            <summary>
+            Provides mathematical operations on collections.
+            </summary>
+        </member>
+        <member name="M:MyMath.Operations.Max(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Returns the maximum integer in a list.
+            </summary>
+            <param name="nums">A list of integers.</param>
+            <returns>The maximum integer in the list, or 0 if the list is empty or null.</returns>
+        </member>
+    </members>
+</doc>

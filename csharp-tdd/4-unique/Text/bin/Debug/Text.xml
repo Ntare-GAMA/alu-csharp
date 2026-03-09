@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Text</name>
+    </assembly>
+    <members>
+        <member name="T:Text.Str">
+            <summary>
+            Provides string utility operations.
+            </summary>
+        </member>
+        <member name="M:Text.Str.UniqueChar(System.String)">
+            <summary>
+            Finds the index of the first unique character in a string.
+            </summary>
+            <param name="s">The input string.</param>
+            <returns>The index of the first unique character, or -1 if none exists.</returns>
+        </member>
+    </members>
+</doc>
