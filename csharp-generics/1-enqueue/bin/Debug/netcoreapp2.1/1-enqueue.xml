@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>1-enqueue</name>
+    </assembly>
+    <members>
+        <member name="T:Queue`1">
+            <summary>
+            Represents a generic first-in-first-out (FIFO) collection.
+            </summary>
+            <typeparam name="T">The type of elements stored in the queue.</typeparam>
+        </member>
+        <member name="T:Queue`1.Node">
+            <summary>
+            Represents a single node in the queue's underlying linked list.
+            </summary>
+        </member>
+        <member name="F:Queue`1.Node.value">
+            <summary>The value stored in this node.</summary>
+        </member>
+        <member name="F:Queue`1.Node.next">
+            <summary>A reference to the next node in the queue.</summary>
+        </member>
+        <member name="M:Queue`1.Node.#ctor(`0)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Queue`1.Node"/> class.
+            </summary>
+            <param name="value">The value to store in the node.</param>
+        </member>
+        <member name="F:Queue`1.head">
+            <summary>The first node in the queue.</summary>
+        </member>
+        <member name="F:Queue`1.tail">
+            <summary>The last node in the queue.</summary>
+        </member>
+        <member name="F:Queue`1.count">
+            <summary>The number of elements currently in the queue.</summary>
+        </member>
+        <member name="M:Queue`1.CheckType">
+            <summary>Returns the type of elements stored in the queue.</summary>
+            <returns>The <see cref="T:System.Type"/> of <typeparamref name="T"/>.</returns>
+        </member>
+        <member name="M:Queue`1.Enqueue(`0)">
+            <summary>Adds a value to the end of the queue.</summary>
+            <param name="value">The value to add to the queue.</param>
+        </member>
+        <member name="M:Queue`1.Count">
+            <summary>Returns the number of elements currently in the queue.</summary>
+            <returns>The number of elements in the queue.</returns>
+        </member>
+    </members>
+</doc>
