@@ -4,10 +4,10 @@ public class Queue<T>
 {
     public class Node
     {
-        public T value;
+        public T? value;
         public Node? next;
 
-        public Node(T value)
+        public Node(T? value)
         {
             this.value = value;
             this.next = null;
@@ -23,7 +23,7 @@ public class Queue<T>
         return typeof(T);
     }
 
-    public void Enqueue(T value)
+    public void Enqueue(T? value)
     {
         Node newNode = new Node(value);
 
