@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>0-abstract_thinking</name>
+    </assembly>
+    <members>
+        <member name="T:Base">
+            <summary>
+            Abstract base class that provides a name property and string representation.
+            </summary>
+        </member>
+        <member name="P:Base.name">
+            <summary>
+            Gets or sets the name of this entity.
+            </summary>
+        </member>
+        <member name="M:Base.ToString">
+            <summary>
+            Returns a string describing the entity name and its concrete type.
+            </summary>
+            <returns>A formatted string: "{name} is a {TypeName}"</returns>
+        </member>
+    </members>
+</doc>
