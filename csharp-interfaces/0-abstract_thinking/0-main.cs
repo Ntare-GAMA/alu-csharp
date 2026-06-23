@@ -12,6 +12,7 @@ class Program
     }
 }
 
+/// <summary>Represents a software engineer entity.</summary>
 class SoftwareEngineer : Base
 {
     // Empty class
