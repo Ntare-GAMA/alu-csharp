@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("4-enemy")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+073abb042ecc0135f9d0f5dab8a580f202c60d2d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1a4f48d1314e6162bf62481df5071d8c9430b733")]
 [assembly: System.Reflection.AssemblyProductAttribute("4-enemy")]
 [assembly: System.Reflection.AssemblyTitleAttribute("4-enemy")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
